@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Recommendation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Recommendation</h1>
+        <form id="product-form">
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+            </select>
+
+            <label for="keyword">Keyword:</label>
+            <input type="text" id="keyword" name="keyword" placeholder="Enter product name">
+
+            <label for="budget">Max Budget (INR):</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget">
+
+            <button type="submit">Find Products</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
